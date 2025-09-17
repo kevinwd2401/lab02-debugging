@@ -3,9 +3,13 @@
 https://www.shadertoy.com/view/tfsBDf
 
 Syntax error: vec doesn't exist, should be vec2
+
 Camera error: The line H *= len * iResolution.x / iResolution.x incorrectly calculates horizontal camera vector, causing image to stretch along x
+
 Raycast bug: UV used to create camera rays is uv (0 to 1) instead of uv2 (-1 to 1), UV should be from -1 to 1, 0 to 1 only calculates rays in one camera quadrant
+
 Raymarch for loop: requires more iterations to hit the floor behind the spheres, since raymarch steps are smaller when the ray is closer to sphere
+
 Reflect error: dir = reflect(eye, nor) wrongly reflects the eye position instead of the ray direction when calculating reflection
 
 
